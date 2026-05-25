@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# ML models (large binaries)
+models/*.pkl
+!models/.gitkeep
+
+# Node
+node_modules/
+.next/
+out/
+*.log
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Docker
+mongo_data/
+
+# Large datasets (download per README)
+ml/dataset/*.csv
+
+# Local env files
+backend/.env
+frontend/.env.local
