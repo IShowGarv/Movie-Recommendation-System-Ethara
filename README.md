@@ -9,12 +9,12 @@ Production-grade movie recommendation stack: offline TF-IDF + cosine similarity 
 │   ├── backend/
 │   ├── frontend/
 │   ├── ml/
-│   └── models/
+│   ├── models/
+│   ├── docker-compose.yml
+│   └── start.ps1
 ├── goldenresponse.py         # Single-file runner (train + run full stack)
 ├── prompt.md                 # Complete system prompt / requirements
-├── justification.md          # Evaluation and golden response rationale
-├── docker-compose.yml
-└── start.ps1
+└── justification.md          # Evaluation and golden response rationale
 ```
 
 ## Quick Start (Recommended)
@@ -31,7 +31,7 @@ python goldenresponse.py run
 Or use:
 
 ```powershell
-.\start.ps1
+.\golden response\start.ps1
 ```
 
 ## Train Models
@@ -60,6 +60,7 @@ npm run dev
 ## Docker
 
 ```bash
+cd "golden response"
 docker compose up --build
 ```
 
