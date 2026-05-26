@@ -8,7 +8,9 @@ venv/
 
 # ML models (large binaries)
 models/*.pkl
+golden response/models/*.pkl
 !models/.gitkeep
+!golden response/models/.gitkeep
 
 # Node
 node_modules/
@@ -27,7 +29,10 @@ mongo_data/
 
 # Large datasets (download per README)
 ml/dataset/*.csv
+golden response/ml/dataset/*.csv
 
 # Local env files
 backend/.env
 frontend/.env.local
+golden response/backend/.env
+golden response/frontend/.env.local

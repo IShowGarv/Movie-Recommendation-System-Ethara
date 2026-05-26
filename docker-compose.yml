@@ -3,12 +3,12 @@ version: "3.9"
 services:
   backend:
     build:
-      context: ./backend
+      context: ./golden response/backend
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
     volumes:
-      - ./models:/models:ro
+      - ./golden response/models:/models:ro
     environment:
       - MONGO_URI=mongodb://db:27017/ai_movies
       - JWT_SECRET=${JWT_SECRET:-dev_secret_change_in_production}
@@ -22,7 +22,7 @@ services:
 
   frontend:
     build:
-      context: ./frontend
+      context: ./golden response/frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
